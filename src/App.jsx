@@ -7,11 +7,13 @@ const App = (colorName) => {
 
   return (
     <>
+      <section id={ selectedColor }>
       <h1>Color Picker</h1>
       <ColorButton colorName="red" setSelectedColor={setSelectedColor}/>
       <ColorButton colorName="gold" setSelectedColor={setSelectedColor}/>
       <ColorButton colorName="black" setSelectedColor={setSelectedColor}/>
       { PickedColor(selectedColor) }
+      </section>
     </>
   )
 }
